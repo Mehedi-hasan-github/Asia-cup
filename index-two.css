@@ -1,0 +1,22 @@
+.content{
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+}
+.schedule{
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    align-items: center;
+}
+.schedule div img{
+    width: 100px;
+    height: 50px;
+    border-radius:10px;
+   
+}
+.schedule-text{
+    text-align: center;
+}

@@ -15,7 +15,7 @@ body{
 /* common style in css is start from here */
 .universal-button{
    display: flex;
-   justify-content: center;
+   justify-content: space-between;
    align-items: center;
    color: white;
    background-color: crimson;
@@ -84,7 +84,12 @@ main{
     width: 80%;
     height: 100%;
     float: right;
-    border-radius: 0px 20px 20px 0px;
+    border-radius: 50%;
+}
+.image-galary img:hover{
+    transform:scale(0.2) ;
+    transition:  2s ;
+    
 }
 /* galary-end from here */
 
