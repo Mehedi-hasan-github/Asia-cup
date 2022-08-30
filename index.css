@@ -1,0 +1,145 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM@1&family=Inter&family=Lobster&family=Noto@0;1&display=swap');
+
+body{
+    
+    width: 100%;
+    background-color: #eee;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+}
+
+
+/* common style in css is start from here */
+.universal-button{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: white;
+   background-color: crimson;
+   padding: 0px 20px;
+   width: fit-content;
+   border-radius: 8px;
+   font-weight: bold;
+   font-size: 15px;
+}
+.normal-button{
+    width: 110px;
+    height: 35px;
+    color: #000000;
+    text-align: center;
+    margin: 10px;
+    border: none;
+    font-size: 15px;
+    border-radius: 4px;
+    background-color: white;
+}
+
+.htag-one{
+    font-size: 35px;
+}
+
+/* common style in css is end from here */
+
+
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* galary-start from here */
+.galary{
+    width: 100%;
+    display: flex;
+    height: 400px;
+    border: none;
+    justify-content: space-between;
+    background-color: #000000;
+    color: white;
+    border-radius: 20px;
+    margin: 100px 0px;
+}
+
+.text-galary{
+    width: 50%;
+    padding: 15px;
+}
+
+.image-galary{
+    width: 50%;
+}
+.image-galary img{
+    width: 80%;
+    height: 100%;
+    float: right;
+    border-radius: 0px 20px 20px 0px;
+}
+/* galary-end from here */
+
+/* preview-title-start */
+.preview{
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+
+.preview-title{
+    width: 70%;
+    height: 160px;
+    position: sticky;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    border-radius: 10px;
+    padding: 15px;
+    margin-right: 20px;
+}
+
+.preview-content{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    
+}
+.content{
+    border: 1px solid #c0bdbd;
+    border-radius: 10px;
+}
+.content img{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+.text-content{
+    margin:0px 10px 10px 10px;
+}
+/* preview-title-end */
+
+/* footer is start from here */
+footer{    
+    width: 100%;
+    margin-top: 50px;
+    padding:40px 0px;
+    background-color: black;
+    text-align: center;
+    color: white;
+}
+footer nav ul{
+    padding-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer nav ul li{
+    list-style: none;
+    margin: 0 7px;
+}
+footer nav ul li a{
+    font-size: 14px;
+    text-decoration: none;
+    color: white;
+}
+/* footer is end from here */
