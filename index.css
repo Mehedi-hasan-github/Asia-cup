@@ -93,7 +93,7 @@ main{
 }
 /* galary-end from here */
 
-/* preview-title-start */
+/* preview-start */
 .preview{
     display: grid;
     grid-template-columns: 20% 80%;
@@ -131,7 +131,19 @@ main{
 .text-content{
     margin:0px 10px 10px 10px;
 }
-/* preview-title-end */
+.transfer{
+    margin-top: 10px;
+}
+.text-content h4{
+    margin:10px 0px;
+}
+.view-and-massege{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* preview-end */
 
 /* footer is start from here */
 footer{    
