@@ -21,9 +21,13 @@ body{
    background-color: crimson;
    padding: 0px 20px;
    width: fit-content;
+   border: none;
    border-radius: 8px;
    font-weight: bold;
    font-size: 15px;
+}
+#arrow{
+    margin-left: 10px;
 }
 .btn-link{
     height: 35px;
@@ -36,10 +40,7 @@ body{
     text-align: center;
     padding-top: 8px;
 }
-.btn-link:active{
-    background-color: crimson;
-    color: white;
-}
+
 
 .btn-link a{
     color: white;
@@ -87,7 +88,7 @@ main{
     border-radius: 50%;
 }
 .image-galary img:hover{
-    transform:scale(0.2) ;
+    transform:scale(0.2) rotate(5000deg) ;
     transition:  2s ;
     
 }
@@ -183,3 +184,137 @@ footer nav ul li a{
 }
 
 /* footer is end from here */
+
+
+
+
+
+
+
+/* Media query for mobile view/ */
+@media only screen and (max-width:576px){
+    .galary{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0px;
+        margin-top: 50px;
+    }
+    .htag-one{
+        font-size: 25px;
+    }
+    .text-galary p{
+        font-size: 14px;
+    }
+    .text-galary{
+        text-align: center;
+        width: 90%;        
+    }
+    .universal-button{
+        height: 30px;
+        border: none;
+    }
+    
+    .text-galary button{
+        margin: 0 auto;
+    }
+    .image-galary{
+        width: 80%;
+    }
+    .image-galary img{
+        width: 80%;
+        border-radius: 50%;
+    }
+    .image-galary img:hover{
+        transform:scale(0.2) rotate(5000deg) ;
+        transition:  2s ;        
+    }
+
+    /* galary is closed here */
+    /* preview strted here..... */
+    .preview{
+        display: flex;
+        flex-direction: column;
+        height: 100%;   
+    }
+    .preview-content{
+        display: flex;
+        width: 100%;   
+        flex-direction: column;        
+    }
+    .preview-title{
+        display: flex;
+        width: 90%;
+        position: static;
+        border-radius: 10px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    /* footer is started here */
+    
+    footer nav ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+    }
+    footer nav ul li{
+        text-align: center;
+        margin: 20px;
+    }
+    footer nav ul li a{
+    text-align: center;
+    }
+}
+
+
+
+/* for tablet view */
+@media only screen and (min-width:577px) and (max-width:768px) {
+   
+    .galary{
+        margin-bottom: 0px;
+    }
+    
+    .preview-title{
+        display: flex;
+        flex-direction: row;
+        width: 95%;
+        height: 100px;
+        position: static;
+        border-radius: 10px;
+        margin: 50px 0px;
+        
+    }
+    .btn-link{
+        padding-top: 20px;
+    }
+    .preview{
+        display: flex;
+        flex-direction: column;
+        height: 100%;   
+    }
+    .preview-content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;   
+        flex-direction: column;        
+    }
+    footer nav ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+    }
+    footer nav ul li{
+        text-align: center;
+        margin: 20px;
+    }
+    footer nav ul li a{
+    text-align: center;
+    }   
+    
+}
